@@ -43,7 +43,7 @@ public class Http2PushListFilter implements Filter {
                 .getResourceAsStream("/WEB-INF/http2-push.txt");
         if (stream == null) {
             LOG.warning(
-                    "No \"http2_push.txt\" file was found inside WEB-INF. No files will be pushed.");
+                    "No \"http2-push.txt\" file was found inside WEB-INF. No files will be pushed.");
         } else {
             int count = 0;
             try (Scanner scanner = new Scanner(stream, "UTF-8")
