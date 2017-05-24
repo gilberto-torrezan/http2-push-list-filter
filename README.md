@@ -83,7 +83,7 @@ The final step is to create the list of files to be pushed. Place a file named `
 # Oh, the file supports comments too, as you see here
 ```
 
-== Advanced usage
+## Advanced usage
 
 By default, all files listed at the `http2-push.txt` file will be pushed when the filter server receives the first HTTP2 GET request to `/`. But you can change this behavior, using multiple path with different resources to be pushed for each one:
 
@@ -115,7 +115,7 @@ when /login
 /img/will-only-be-pushed-on-login.png
 
 ```
-=== Warning!
+### Warning!
 
 When using multiple paths, remember to update the filter-mapping in your `web.xml` file accordingly. For example:
 
